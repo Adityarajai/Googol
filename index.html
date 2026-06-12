@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googol</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 10vw, 70px);
+            color: #4285F4;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 30px;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+        }
+
+        button {
+            padding: 14px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            background-color: #4285F4;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        button:hover {
+            background-color: #3367D6;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                flex-direction: column;
+            }
+
+            input[type="text"],
+            button {
+                width: 100%;
+                min-width: 0;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Googol</h1>
+
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search anything on Googol" required>
+        <button type="submit">Search</button>
+    </form>
+
+</body>
+</html>
